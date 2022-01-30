@@ -10,7 +10,7 @@ const routes: Array<RouteRecordRaw> = [
   {
     path: '/search',
     name: 'search',
-    // lazy-loaded
+    // lazy-load
     component: () => import(/* webpackChunkName: "search" */ '../components/page/SearchPage.vue'),
   },
   {

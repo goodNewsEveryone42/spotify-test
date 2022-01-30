@@ -1,7 +1,12 @@
 <template>
   <div class="search-field">
     <label for="searchInput"></label>
-    <input  type="text" name="search" id="searchInput"/>
+    <input
+      type="text"
+      name="searchInput"
+      id="searchInput"
+      placeholder="Исполнитель"
+    />
   </div>
 </template>
 

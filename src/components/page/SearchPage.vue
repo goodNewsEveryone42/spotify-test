@@ -1,15 +1,27 @@
 <template>
   <div class="search-page">
-    поиск
+    <div class="search-page__input-field">
+      <SearchField />
+    </div>
   </div>
 </template>
 
 <script lang="ts">
-import { Vue } from 'vue-class-component';
-import SearchInput from '../inputFieldComponent/searchField/SearchField.vue'; // @ is an alias to /src
+import { Vue, Options } from 'vue-class-component';
+import SearchField from '../inputFieldComponent/searchField/SearchField.vue'; // @ is an alias to /src
 
+@Options({
+  components: {
+    SearchField,
+  },
+})
 export default class SearchPage extends Vue {}
 </script>
 
 <style scoped lang="scss">
+  .search-page {
+    &__input-field {
+      margin-left: 20px;
+    }
+  }
 </style>
